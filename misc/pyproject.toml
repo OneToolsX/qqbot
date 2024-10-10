@@ -7,8 +7,9 @@ requires-python = ">=3.9, <4.0"
 
 [tool.nonebot]
 adapters = [
-    { name = "Console", module_name = "nonebot.adapters.console" }
+    { name = "Console", module_name = "nonebot.adapters.console" },
+    {name = "QQ", module_name = "nonebot.adapters.qq"}
 ]
 plugins = []
-plugin_dirs = []
+plugin_dirs = ["plugins/test"]
 builtin_plugins = ["echo"]
